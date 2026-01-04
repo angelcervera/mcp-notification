@@ -37,3 +37,18 @@ command = "mcp-notifications"
   - Input: `{ "title": string, "message": string, "urgency"?: "low"|"normal"|"critical", "timeoutMs"?: number }`
   - Notes:
     - `urgency` and `timeoutMs` apply only on Linux (via `notify-send`).
+
+## Release
+
+Releases are produced by GitHub Actions via GoReleaser. They build binaries for Linux, macOS, and Windows (amd64 + arm64).
+
+### Create a release
+
+```sh
+git tag v0.1.0
+git push origin v0.1.0
+```
+
+### Manual trigger
+
+You can also trigger the `release` workflow manually from the GitHub Actions UI.
