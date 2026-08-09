@@ -1,3 +1,5 @@
+
+
 # mcp-notifications
 
 MCP server (stdio, JSON-RPC) to send local desktop notifications from Codex or other agents.
@@ -34,7 +36,7 @@ command = "mcp-notifications"
 ## Exposed tool
 
 - `notify`
-  - Input: `{ "title": string, "message": string, "urgency"?: "low"|"normal"|"critical", "timeoutMs"?: number }`
+  - Input: `{ "title": string, "message": string, "urgency"?: "low"|"normal"|"critical", "timeoutMs"?: integer }`
   - Notes:
     - `urgency` and `timeoutMs` apply only on Linux (via `notify-send`).
 
